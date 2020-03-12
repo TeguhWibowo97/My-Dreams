@@ -21,3 +21,6 @@ Route::get('/dashboard','AdminController@index');
 Route::get('/about','AdminController@about');
 Route::get('/impian','AdminController@impian');
 Route::post('/impian','AdminController@create');
+Route::post('/impian/edit/{impian}','AdminController@update');
+Route::get('/impian/edit/{impian}','AdminController@edit');
+// Route::get('/impian/edit/{impian}','AdminController@update');
