@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Mar 2020 pada 02.49
+-- Waktu pembuatan: 13 Mar 2020 pada 09.33
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.2
 
@@ -57,9 +57,11 @@ CREATE TABLE `impian` (
 --
 
 INSERT INTO `impian` (`id`, `nama_impian`, `harapan_tercapai`, `status_impian`, `created_at`, `updated_at`) VALUES
-(1, 'Ingin membeli sepatu', 'semoga tercapai sebelum semester 7', NULL, '2020-03-10 18:07:19', '2020-03-10 18:07:19'),
-(2, 'ingin membeli laptop baru', 'semester 7', NULL, '2020-03-10 18:12:55', '2020-03-10 18:12:55'),
-(3, 'Bisa Membeli Mobil', 'sebelum umur 35', NULL, '2020-03-10 18:14:57', '2020-03-10 18:14:57');
+(1, 'Ingin membeli sepatu adidas ukuran 42', 'semoga tercapai sebelum semester 7', 'belum', '2020-03-10 18:07:19', '2020-03-13 01:05:11'),
+(2, 'ingin membeli laptop baru', 'semester 7', 'tercapai', '2020-03-10 18:12:55', '2020-03-13 00:37:04'),
+(3, 'Bisa Membeli Mobil', 'sebelum umur 35', 'tercapai', '2020-03-10 18:14:57', '2020-03-13 01:27:34'),
+(5, 'Ingin membeli sepatu', 'sebelum umur 35 ya', 'belum', '2020-03-12 23:02:23', '2020-03-12 23:09:14'),
+(6, 'aaaaaa', 'aaaaaaa', NULL, '2020-03-13 01:27:53', '2020-03-13 01:27:53');
 
 -- --------------------------------------------------------
 
@@ -142,7 +144,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT untuk tabel `impian`
 --
 ALTER TABLE `impian`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `migrations`
