@@ -23,4 +23,8 @@ Route::get('/impian','AdminController@impian');
 Route::post('/impian','AdminController@create');
 Route::post('/impian/edit/{impian}','AdminController@update');
 Route::get('/impian/edit/{impian}','AdminController@edit');
+Route::get('/impian/hapus/{impian}','AdminController@hapus');
+Route::get('/impian/tercapai','AdminController@tercapai');
+Route::get('/impian/belumtercapai','AdminController@belumtercapai');
+
 // Route::get('/impian/edit/{impian}','AdminController@update');

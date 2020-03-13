@@ -45,8 +45,8 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href="index.html">
-              <img class="logo-2" src="/assetAdmin/img/logo2.png" alt="" />
+            <a href="/dashboard" class="text-white">
+              <img src="/assetAdmin/img/favicon.png"> MY DREAM
             </a>
             <button
               class="navbar-toggler"
@@ -72,8 +72,27 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="/about">About</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="/impian">Impian</a>
+                </li>
+                <li class="nav-item submenu dropdown active">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Status Impian</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/impian/tercapai">Impian Tercapai</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/impian/belumtercapai">Belum Tercapai</a>                      
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
@@ -107,7 +126,7 @@
 
     <!--================ Start About Area =================-->
     <section class="about_area section_gap">
-      <div class="container">
+      <div class="container ">
         <div class="row">
             @yield('content')
         </div>

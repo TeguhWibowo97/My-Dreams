@@ -44,6 +44,23 @@ class AdminController extends Controller
         return redirect('/impian');
     }
 
+    public function hapus($id)
+    {
+        MImpian::destroy($id);
+        return redirect('/impian');
+    }
+
+    public function tercapai()
+    {
+        $dashboard = MImpian::where('status_impian','tercapai')->get();
+        return view('dashboard.tercapai',['dashboard'=>$dashboard]);
+    }
+    public function belumtercapai()
+    {
+        $status = "tercapai";
+        $dashboard = MImpian::where('status_impian',['belum'])->orWhere('status_impian',null)->get();
+        return view('dashboard.belumtercapai',['dashboard'=>$dashboard]);
+    }
 
     
 }

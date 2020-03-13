@@ -45,8 +45,8 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href="index.html">
-              <img class="logo-2" src="/assetAdmin/img/logo2.png" alt="" />
+            <a href="/dashboard" class="text-white">
+              <img src="/assetAdmin/img/favicon.png"> MY DREAM
             </a>
             <button
               class="navbar-toggler"
@@ -74,6 +74,25 @@
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="/impian">Impian</a>
+                </li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Status Impian</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/impian/tercapai">Impian Tercapai</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/impian/belumtercapai">Belum Tercapai</a>                      
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link search" id="search">
@@ -130,7 +149,7 @@
                       <a href="/impian/edit/{{$impian->id}}">
                         <img src="/assetAdmin/img/ubah.png" width="25px">
                       </a>
-                      <a href="/impian/hapus/{{$impian->id}}">
+                      <a href="/impian/hapus/{{$impian->id}}" onclick="javascript:return confirm('apakah yakin akan menghapus data ?')">
                         <img src="/assetAdmin/img/hapus.png" width="25px">
                       </a>
                     </td>
